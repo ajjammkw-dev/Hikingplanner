@@ -1,0 +1,104 @@
+:root {
+    --primary: #2d4635; /* Forest Green */
+    --accent: #d4a373;  /* Sand/Brown */
+    --dark: #1a1a1a;
+    --light: #f1f1f1;
+    --gray: #a0a0a0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(26, 26, 26, 0.95);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo { font-weight: 800; font-size: 1.5rem; letter-spacing: 2px; }
+.logo span { color: var(--accent); }
+
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 30px; }
+.nav-links a { 
+    text-decoration: none; color: var(--light); font-size: 0.9rem;
+    transition: 0.3s;
+}
+.nav-links a:hover { color: var(--accent); }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; }
+.badge { background: var(--accent); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+
+.next-target {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+/* Sections */
+.container { width: 85%; margin: auto; }
+.section { padding: 80px 0; }
+.section-title { margin-bottom: 40px; font-size: 2rem; border-left: 5px solid var(--accent); padding-left: 15px; }
+
+.card { background: #252525; padding: 30px; border-radius: 15px; margin-bottom: 20px; }
+
+/* Plan Card */
+.plan-card { background: var(--primary); padding: 40px; border-radius: 20px; }
+.plan-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+.stat-box { background: rgba(0,0,0,0.2); padding: 15px; text-align: center; border-radius: 10px; margin-bottom: 10px; }
+
+.hard { color: #ff4d4d; font-weight: bold; }
+
+/* Grid Layouts */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; }
+
+.team-member { text-align: center; }
+.avatar { width: 100px; height: 100px; background: var(--gray); border-radius: 50%; margin: 0 auto 15px; }
+
+.history-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.history-item { height: 200px; border-radius: 15px; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; background-size: cover; }
+
+/* Forms */
+form { display: flex; flex-direction: column; gap: 15px; }
+input, textarea { padding: 12px; border-radius: 5px; border: none; background: #333; color: white; }
+.btn-primary { 
+    background: var(--accent); color: var(--dark); padding: 12px 25px; 
+    text-decoration: none; border-radius: 5px; font-weight: bold; border: none; cursor: pointer;
+}
+
+footer { text-align: center; padding: 40px; color: var(--gray); font-size: 0.8rem; }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .grid-2, .plan-grid { grid-template-columns: 1fr; }
+    .hero-content h1 { font-size: 2.2rem; }
+}
