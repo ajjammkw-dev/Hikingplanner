@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SummitSync | Hiking Group Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SUMMIT<span>SYNC</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#plan">Plan</a></li>
+            <li><a href="#logistics">Logistics</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#contact">Join</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">Current Status: Preparation Phase</span>
+            <h1>Explore the Wild, Respect the Peak.</h1>
+            <p>Platform internal koordinasi pendakian untuk mencapai puncak dengan aman dan terorganisir.</p>
+            <div class="next-target">
+                <h3>Next Target: <strong>Gn. Rinjani (3.726 MDPL)</strong></h3>
+                <p>15-18 Agustus 2026</p>
+            </div>
+            <a href="#plan" class="btn-primary">View Hiking Plan</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="plan" class="section">
+            <h2 class="section-title">Hiking Plan</h2>
+            <div class="plan-card">
+                <div class="plan-grid">
+                    <div class="plan-info">
+                        <h3>Gunung Rinjani via Sembalun</h3>
+                        <p><strong>Lokasi:</strong> Lombok, NTB</p>
+                        <p><strong>Durasi:</strong> 4 Hari 3 Malam</p>
+                        <p><strong>Difficulty:</strong> <span class="hard">Hard</span></p>
+                    </div>
+                    <div class="plan-stats">
+                        <div class="stat-box"><h4>3.726</h4><p>MDPL</p></div>
+                        <div class="stat-box"><h4>22° / 10°</h4><p>Weather Est.</p></div>
+                    </div>
+                </div>
+                <div class="prep-note">
+                    <strong>Persiapan Fisik:</strong> Lari 5km (3x seminggu) + Latihan beban.
+                </div>
+            </div>
+        </section>
+
+        <section id="logistics" class="section bg-alt">
+            <h2 class="section-title">Logistics & Budget</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Budget Est. (Per Person)</h3>
+                    <ul class="list">
+                        <li>Transportasi PP: Rp 1.500.000</li>
+                        <li>Simaksi & Guide: Rp 450.000</li>
+                        <li>Logistik Makan: Rp 300.000</li>
+                        <li class="total">Total: Rp 2.250.000</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Equipment Checklist</h3>
+                    <ul class="checklist">
+                        <li><input type="checkbox" checked> Tenda Kapasitas 4</li>
+                        <li><input type="checkbox" checked> Kompor & Gas</li>
+                        <li><input type="checkbox"> P3K Kit</li>
+                        <li><input type="checkbox"> Water Filter</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section">
+            <h2 class="section-title">The Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="avatar"></div>
+                    <h4>Andi Wijaya</h4>
+                    <p>Leader & Navigator</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar"></div>
+                    <h4>Siti Aminah</h4>
+                    <p>Logistics & Medic</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar"></div>
+                    <h4>Budi Santoso</h4>
+                    <p>Documentary</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="section bg-alt">
+            <h2 class="section-title">Our Achievements</h2>
+            <div class="history-grid">
+                <div class="history-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80')">
+                    <h4>Gn. Merbabu</h4>
+                    <p>Mei 2025 - Via Selo</p>
+                </div>
+                <div class="history-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=400&q=80')">
+                    <h4>Gn. Prau</h4>
+                    <p>Feb 2025 - Patakbanteng</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="card">
+                <h2>Join The Expedition</h2>
+                <p>Patuhi etika <strong>Leave No Trace</strong>: Jangan mengambil apapun kecuali gambar, jangan meninggalkan apapun kecuali jejak kaki.</p>
+                <form id="joinForm">
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Pengalaman Pendakian" rows="4"></textarea>
+                    <button type="submit" class="btn-primary">Kirim Lamaran</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SummitSync Hiking Group. Stay Safe, Stay Wild.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
